@@ -5,6 +5,8 @@
 //  Created by saeem  on 26/03/22.
 //
 
+// In this file I have created some reusable functions to use constraints more effectively.
+
 import UIKit
 
 extension UIView {
@@ -45,11 +47,13 @@ extension UIView {
         if let height = height {
             heightAnchor.constraint(equalToConstant: height).isActive = true
         }
-        
-        
     }
     
     func centerX(inView view: UIView){
         centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+    }
+    
+    func centerY(inView view: UIView){
+        centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
     }
 }
